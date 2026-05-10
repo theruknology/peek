@@ -30,7 +30,7 @@ const PILLARS: Pillar[] = [
   {
     glyph: <BinaryGlyph />,
     title: "single binary",
-    subtitle: "rust + ratatui · brew or cargo",
+    subtitle: "rust + ratatui",
   },
 ];
 
@@ -70,12 +70,14 @@ const PillarCard: React.FC<{
   fps: number;
 }> = ({ index, pillar, frame, fps }) => {
   const appear = spring({
-    frame: frame - index * 14,
+    frame: frame - index * 9,
     fps,
-    config: { damping: 18, stiffness: 110, mass: 0.85 },
+    config: { damping: 20, stiffness: 100, mass: 0.95 },
   });
   const op = interpolate(appear, [0, 1], [0, 1]);
-  const ty = interpolate(appear, [0, 1], [22, 0]);
+  const ty = interpolate(appear, [0, 1], [40, 0]);
+  const sc = interpolate(appear, [0, 1], [0.92, 1]);
+  const blur = interpolate(appear, [0, 1], [10, 0]);
 
   // Subtle "breathing" on glyph
   const breathe = Math.sin(((frame - index * 8) / 30) * Math.PI) * 0.5 + 0.5;
@@ -90,7 +92,8 @@ const PillarCard: React.FC<{
         border: `1px solid ${colors.border}`,
         borderRadius: radii.lg,
         opacity: op,
-        transform: `translateY(${ty}px)`,
+        transform: `translateY(${ty}px) scale(${sc})`,
+        filter: `blur(${blur}px)`,
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
@@ -117,20 +120,21 @@ const PillarCard: React.FC<{
       <div
         style={{
           fontFamily: fonts.sans,
-          fontSize: 30,
-          fontWeight: 600,
+          fontSize: 34,
+          fontWeight: 700,
           color: colors.text,
-          letterSpacing: -0.2,
+          letterSpacing: -0.8,
         }}
       >
         {pillar.title}
       </div>
       <div
         style={{
-          fontFamily: fonts.mono,
-          fontSize: 15,
+          fontFamily: fonts.sans,
+          fontSize: 17,
+          fontWeight: 400,
           color: colors.textDim,
-          letterSpacing: 0.2,
+          letterSpacing: -0.2,
         }}
       >
         {pillar.subtitle}

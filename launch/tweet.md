@@ -10,7 +10,7 @@ Local embed model. 200ms. Zero cloud.
 
 [GIF: hit hotkey → type "that jwt error" → jump to it]
 
-github.com/YOUR_USER/peek
+github.com/theruknology/peek
 
 ## Tweet 2 (the how)
 
@@ -32,7 +32,7 @@ If you can't run it on a plane, I don't ship it.
 ## Tweet 4 (the install)
 
 ```
-brew install YOUR_USER/peek/peek
+brew install theruknology/peek/peek
 peek install-tmux
 peek daemon &
 ```
@@ -45,4 +45,4 @@ It's MIT. PRs welcome — especially kitty / wezterm / ghostty integrations.
 
 If `peek` saves you from one more Ctrl-R regret, a ★ helps others find it 🌟
 
-github.com/YOUR_USER/peek
+github.com/theruknology/peek

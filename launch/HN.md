@@ -6,7 +6,7 @@ Show HN: Peek – Spotlight for your terminal scrollback (local, 200ms, no cloud
 
 ## URL
 
-https://github.com/YOUR_USER/peek
+https://github.com/theruknology/peek
 
 ## Body
 

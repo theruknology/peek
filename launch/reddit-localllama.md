@@ -17,6 +17,6 @@ The local-LLM angle that might interest this sub:
 
 Single 12MB Rust binary. macOS + Linux. Tmux-only for now; shell-hook integrations for kitty/wezterm/ghostty are next.
 
-github.com/YOUR_USER/peek — MIT, PRs welcome.
+github.com/theruknology/peek — MIT, PRs welcome.
 
 Curious if anyone has used sqlite-vec at scale — would love to hear about pain points before I go past 1M chunks.

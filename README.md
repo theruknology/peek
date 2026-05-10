@@ -6,10 +6,10 @@
 
 **What was that error yesterday?** — answered in 200ms. 100% local.
 
-[![CI](https://github.com/YOUR_USER/peek/actions/workflows/ci.yml/badge.svg)](https://github.com/YOUR_USER/peek/actions/workflows/ci.yml)
+[![CI](https://github.com/theruknology/peek/actions/workflows/ci.yml/badge.svg)](https://github.com/theruknology/peek/actions/workflows/ci.yml)
 [![Crates.io](https://img.shields.io/crates/v/peek.svg)](https://crates.io/crates/peek)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Stars](https://img.shields.io/github/stars/YOUR_USER/peek?style=social)](https://github.com/YOUR_USER/peek/stargazers)
+[![Stars](https://img.shields.io/github/stars/theruknology/peek?style=social)](https://github.com/theruknology/peek/stargazers)
 
 <img src="docs/peek-demo.gif" width="720" alt="peek demo: type 'that jwt error', jump to it">
 
@@ -49,7 +49,7 @@ Hit `↵` — tmux jumps to that pane, scrolled to that line. Done.
 
 ### Homebrew
 ```bash
-brew install YOUR_USER/peek/peek
+brew install theruknology/peek/peek
 ```
 
 ### Cargo
@@ -58,7 +58,7 @@ cargo install peek
 ```
 
 ### Pre-built binaries
-Grab the latest from [Releases](https://github.com/YOUR_USER/peek/releases).
+Grab the latest from [Releases](https://github.com/theruknology/peek/releases).
 
 ## Quickstart (90 seconds)
 
@@ -171,7 +171,7 @@ MIT. See [LICENSE](LICENSE).
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=YOUR_USER/peek&type=Date)](https://star-history.com/#YOUR_USER/peek&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=theruknology/peek&type=Date)](https://star-history.com/#theruknology/peek&Date)
 
 ---
 

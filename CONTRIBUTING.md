@@ -5,7 +5,7 @@ Thanks for considering a contribution.
 ## Quick start
 
 ```bash
-git clone https://github.com/YOUR_USER/peek
+git clone https://github.com/theruknology/peek
 cd peek
 cargo build
 cargo test

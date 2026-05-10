@@ -21,6 +21,6 @@ peek install-tmux       add the hotkey
 peek nuke               wipe everything
 ```
 
-GIF + install in the README: github.com/YOUR_USER/peek
+GIF + install in the README: github.com/theruknology/peek
 
 MIT. Honest limitations + roadmap in the README. PRs especially welcome for kitty / wezterm / ghostty integrations — those are next.
