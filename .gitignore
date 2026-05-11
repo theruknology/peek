@@ -1,4 +1,54 @@
+# Rust
 /target
 **/*.rs.bk
 *.pdb
+
+# Node / Remotion (video project)
+video/node_modules
+video/out
+video/.cache
+video/build
+video/dist
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnp
+.pnp.js
+
+# macOS / Linux / Windows cruft
 .DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Editors / IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+
+# Env / local config
+.env
+.env.*
+*.local
+
+# Logs
+*.log
+logs/
+
+# Claude / agent tooling
+.claude/
+CLAUDE.md
+NOTES.md
+
+# Coverage / profiling
+*.profraw
+*.profdata
+coverage/
+tarpaulin-report.*

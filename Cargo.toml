@@ -4,11 +4,12 @@ version = "0.1.0"
 edition = "2021"
 description = "Cmd-K for your tmux scrollback. Local semantic search, sub-second."
 license = "MIT"
-repository = "https://github.com/peek-rs/peek"
-homepage = "https://github.com/peek-rs/peek"
+repository = "https://github.com/theruknology/peek"
+homepage = "https://github.com/theruknology/peek"
 readme = "README.md"
 keywords = ["tmux", "tui", "search", "semantic", "embeddings"]
 categories = ["command-line-utilities"]
+publish = false
 
 [[bin]]
 name = "peek"

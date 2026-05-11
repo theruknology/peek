@@ -7,7 +7,6 @@
 **What was that error yesterday?** — answered in 200ms. 100% local.
 
 [![CI](https://github.com/theruknology/peek/actions/workflows/ci.yml/badge.svg)](https://github.com/theruknology/peek/actions/workflows/ci.yml)
-[![Crates.io](https://img.shields.io/crates/v/peek.svg)](https://crates.io/crates/peek)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Stars](https://img.shields.io/github/stars/theruknology/peek?style=social)](https://github.com/theruknology/peek/stargazers)
 
@@ -47,18 +46,17 @@ Hit `↵` — tmux jumps to that pane, scrolled to that line. Done.
 
 ## Install
 
-### Homebrew
+No package yet — clone and build from source. Needs a Rust toolchain ([rustup](https://rustup.rs)).
+
 ```bash
-brew install theruknology/peek/peek
+git clone https://github.com/theruknology/peek
+cd peek
+cargo build --release
+# binary lands at ./target/release/peek — symlink it onto your PATH:
+ln -s "$PWD/target/release/peek" ~/.local/bin/peek
 ```
 
-### Cargo
-```bash
-cargo install peek
-```
-
-### Pre-built binaries
-Grab the latest from [Releases](https://github.com/theruknology/peek/releases).
+(Packaging — Homebrew tap, Cargo crate, prebuilt release binaries — comes once the surface stabilises. PRs welcome.)
 
 ## Quickstart (90 seconds)
 
@@ -67,7 +65,7 @@ Grab the latest from [Releases](https://github.com/theruknology/peek/releases).
 peek install-tmux
 tmux source-file ~/.tmux.conf
 
-# 2. Start the indexer (or `brew services start peek` / `systemctl --user enable peek`)
+# 2. Start the indexer
 peek daemon &
 
 # 3. Use your terminal normally for a while.

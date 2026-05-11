@@ -16,9 +16,9 @@ I kept losing things in tmux scrollback. The stack trace from this morning, the 
 
 `peek` is what I built. It pipes every tmux pane through a local capture daemon, embeds the output with BGE-small (ONNX, on CPU), and stores chunks in sqlite + sqlite-vec. From any pane you hit `prefix + Ctrl-k`, an overlay pops up, you type a question in plain English, and the top results show up in <200ms with timestamp + pane + snippet. Hit enter and tmux jumps to that pane scrolled to that line.
 
-Everything is local. No telemetry. No API key. Single 12MB Rust binary plus a 30MB embed model that downloads once. API keys / JWTs / `*_TOKEN=...`-style env vars are redacted before they hit the index.
+Everything is local. No telemetry. No API key. Single ~12MB Rust binary plus a ~30MB embed model that downloads once. API keys / JWTs / `*_TOKEN=...`-style env vars are redacted before they hit the index.
 
-Demo gif in the README. The MVP is tmux-only; kitty/wezterm/ghostty integrations are next, and I'd love help on those.
+No package yet — `git clone && cargo build --release`. Tap / Cargo crate / prebuilt releases come once the CLI stabilises. Demo gif in the README. The MVP is tmux-only; kitty/wezterm/ghostty integrations are next, and I'd love help on those.
 
 Honest limitations:
 - ~200MB RSS for the daemon at steady state on a busy box

@@ -32,9 +32,10 @@ If you can't run it on a plane, I don't ship it.
 ## Tweet 4 (the install)
 
 ```
-brew install theruknology/peek/peek
-peek install-tmux
-peek daemon &
+git clone https://github.com/theruknology/peek
+cd peek && cargo build --release
+./target/release/peek install-tmux
+./target/release/peek daemon &
 ```
 
 Hit prefix+Ctrl-k from any pane. Type a question. Jump.
